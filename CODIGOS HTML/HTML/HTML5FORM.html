@@ -1,0 +1,43 @@
+<h1><i>Lección HTML5</i></h1>
+<h1>TIPOS DE FORMULARIOS</h1>
+<hr>
+<h2>Formulario simple</h2>
+<form>
+    <label>Correo</label>
+    <input id="user" name="username" type="text" placeholder="xxxxxxx@example.com"/>
+    <input type="submit" value="Enviar">
+</form>
+<!--opcion de required (obligatorio)-->
+<h2>opcion de required (obligatorio)</h2>
+<form>
+    <label>Correo</label>
+    <input id="user" name="username" type="text" placeholder="xxxxxxx@example.com" required autocomplete="true"/>
+    <input type="submit" value="Enviar">
+</form>
+<h2>TIPOS DE BUSQUEDA</h2>
+<hr>
+<!--tipo busqueda simple-->
+<h2>tipo busqueda simple</h2>
+<input id="mysearch" name="searchitem" type="search"/>
+<input type="button" value="Buscar"/>
+<hr>
+<!--opciones de busqueda-->
+<h2>Busqueda con opciones</h2>
+<input id="car" type="text" list="colores"/>
+<datalist id="colores">
+    <option value="red">
+    <option value="green">
+    <option value="blue">
+</datalist>
+<!--Campos inteligentes para moviles-->
+<h2>Campos con reconocimiento de entrada para moviles</h2>
+<input type="email" name="email" id="email" placeholder="example@example.com"/>
+<br>
+<input type="url" name="url" id="url" placeholder="example.com"/>
+<br />
+<input type="tel" name="tel" id="tel" placeholder="555.555.1211"/>
+<hr />
+<svg width="100" height="100">
+    <line x1="50" y1="0" x2="50" y2="100" style="stroke:black"/>
+    <line x1="0" y1="50" x2="100" y2="50" style="stroke:black"/>
+</svg>

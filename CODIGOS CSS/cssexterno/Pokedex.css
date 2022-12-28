@@ -1,0 +1,14 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.poke1{
+    background-color: red;
+    height: 500px;
+}
+
+.poke2{
+    background-color: brown;
+    height: 300px;
+    width: 600px;
+}

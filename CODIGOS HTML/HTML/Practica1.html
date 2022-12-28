@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Cat</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        header {
+            background-color: rgb(255, 94, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+
+        
+        nav {
+            float: left;
+            width: 33.33%;
+            background: rgb(255, 167, 67);
+            padding: 20px;
+        }
+
+        nav input {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        
+
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        footer {
+            background-color: rgb(255, 94, 0);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+
+        <h1 align="center">Bienvenido a Pet Shop Cat</h1>
+        <img src="./LOGO PETSHOPCAT.png"  height="250" width="300px" alt=""/>
+
+    </header>
+    <hr>
+    
+    <h2>Iniciar cesión</h2>
+    <label for="correo1">Correo</label><br>
+    <input type="email" id="correo1" name="correo1" placeholder="xxxxxxxxx@example.com"><br><br>
+    
+    <label for="psw1">Password</label><br>
+    <input type="password" id="psw1" name="psw1" placeholder="***********"><br><br>
+  
+        <input type="button" id="submit" name="submit" value="Enviar" onclick="alert('Bienvenido');"><br><br>
+
+
+    <hr>
+
+    <section>
+        <nav>
+        <h2>Seleccione su mascota</h2><br>
+        <input type="radio" id="Gato" name="Mascota" value="Gato">
+        <label for="Gato">Gato</label><br>
+        <input type="radio" id="Perro" name="Mascota" value="Perro">
+        <label for="Perro">Perro</label><br>
+        <input type="radio" id="Peces" name="Mascota" value="Peces">
+        <label for="Peces">Peces</label><br><br>
+        </nav>
+
+        <nav>
+            <h2>Seleccion de alimento</h2><br>
+            <input type="checkbox" id="topping1" name="topping1" value="Croquetas">
+            <label for="topping1">Croquetas</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Alimento húmedo">
+            <label for="topping2">Alimento húmedo</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Hojuelas">
+            <label for="topping3">Hojuelas</label><br><br>
+        </nav>
+        <nav>
+            <h2>Seleccionar la cantidad</h2><br>
+            <input type="checkbox" id="topping1" name="topping1" value="1-3">
+            <label for="topping1">1-3</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="3-6">
+            <label for="topping2">3-6</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="6-12">
+            <label for="topping3">6-12</label><br><br>
+        </nav>
+
+        <hr>
+
+        <h2>Precione Enviar</h2>
+        <input type="button" id="submit" name="submit" value="Enviar" onclick="alert('Selecciôn enviada');"><br><br>
+
+        <article>
+            <h1 aling="center">La importancia de las mascotas</h1>
+            <p>Las mascotas pueden disminuir el estrés y la sensación de soledad, mejorar la salud del corazón e, incluso, ayudar a los niños con sus habilidades emocionales y sociales.<br /> Así lo asegura el NIH (National Institutes of Health), grupo de instituciones del gobierno de Estados Unidos dedicado a la investigación médica.</p>
+            <img src="./mascotas.jpg" width="" height="" alt=""/>
+        </article>
+    </section>
+    
+    <footer>
+
+        <h1>Contactanos</h1>
+
+        <table align="center">
+
+            <tr>
+                <th>compañia</th>
+                <th>contacto</th>
+                <th>pais</th>
+            </tr>
+            
+            <tr>
+                <td>Faunacorp</td>
+                <td>Leo Quispe</td>
+                <td>Bolivia</td>
+            </tr>
+        
+            <tr>
+                <td>Petcompain</td>
+                <td>Rupert Lopez</td>
+                <td>Mexico</td>
+        </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
